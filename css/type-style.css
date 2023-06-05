@@ -1,0 +1,204 @@
+.feather, .feather-home {
+    transform: translateX(-50%);
+}
+
+/* Стили каленжаря */
+
+#calendar_style_css {
+    width: 60%;
+    margin-top: 1%;
+    /* float: left; */
+    /* margin-left: auto; */
+    margin-bottom: 20px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+/* Поиск бар */
+
+.poisk{
+    position: absolute;
+    max-width: 40%;
+    margin-right: 100%;
+    display: flex;
+}
+input {
+    position: relative;
+    width: 100%;
+    border:1px solid #7366ff;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    padding:1%;
+    display: block;
+    outline: none;
+}
+
+.searchicon {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    color:black;
+    transform: scale(1.3);
+    cursor: default;
+}
+.searchbox{
+    width:15%;
+    background-color:#7366ff;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+/* Стили навбара, надо добавить margin при размере окна меньше 910px */
+
+div.nav-right.col-8.pull-right.right-header.p-0{
+    max-width: 100%;
+    position: absolute;
+    margin-left: 50%;
+}
+ul.nav-menus{
+    max-width: 70%;
+}
+.page-header.close_icon div.pisk {
+    margin-left: 10px;
+}
+
+
+
+.horizontalHr {
+    height: 15px;
+    color: #7864fc
+}
+
+/* Надо с помощью JS добавить функцию автоматического изменения даты для даты которая стоит там */
+
+#p{
+    margin-bottom: auto;
+}
+#p p{
+    font-size: 20px;
+    display: inline;
+    width: fit-content;
+    margin-bottom: 0;
+}
+
+/* Стили кнопок */
+
+.buttonCourse{
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.buttonsCourse{
+    max-width: 18%;
+    width:100%;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #7366ff;
+    background-color:white;
+    transition-duration: 0.6s;
+}
+.buttonsCourse:hover{
+    background-color:#7864fc;
+    color: white;
+    border: 2px solid white;
+}
+
+/* Таблица */
+
+.table{
+    border-collapse: collapse;
+}
+.tableBox{
+    max-width: 100%;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 0.5%; */
+    padding: 2%;
+    /* background-color: aqua; */
+}
+thead{
+    background-color: #8f85ff
+}
+td, th {
+    text-align: center;
+}
+td a {
+    text-decoration: none;
+    color: black
+}
+
+/* Надо с помощью JS добавить функцию автоматического изменения курса и пары для той которая стоит там */
+
+.valueCourse, .valueLesson{
+    /* display: flex; */
+    float: left;
+}
+
+/* Стили для left-bar желательно не трогать, чтобы ничего не испортить */
+
+/* .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .logo-wrapper,
+.page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .logo-icon-wrapper{
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+} */
+
+/* Для иконки той, которая стоит в лефт баре */
+
+/* .feather, */ /* .feather-grid, */ /* .status_toggle, .middle, */ /* .sidebar-toggle {
+    transform: translateX(10%) translateY(30%);
+} */
+
+.lan-1 {
+    text-align: center;
+}
+
+.sidebar-list {
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+    .toggle-sidebar{
+        transform: translateY(-50%);
+    }
+    .poisk{
+        transform: translateY(50%);
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width:810px) {
+    ul.nav-menus{
+        margin-right: 50%
+    }
+}

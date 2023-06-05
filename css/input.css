@@ -1,0 +1,95 @@
+container-fluid {
+    background-color:black
+}
+
+#road{
+    display: flex;
+    float: right;
+}
+#stud{
+    display: flex;
+    float: left;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#road, #stud{
+    margin-top: 15px;
+}
+#road a{
+    text-decoration: none;
+    color:black
+}
+#road a:last-child {
+    cursor: default;
+}
+.roadIcon {
+    transform: scale(0.8) translateX(-6px) translateY(-3px)
+}
+
+
+
+.inputBox {
+    margin: auto;
+    max-width: 98%;
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 2px 2px 15px lightgrey;
+}
+
+input{
+    border-radius:5px;
+    margin:5px;
+    text-transform: capitalize;
+}
+input:focus{
+    border: 1px solid #7366ff;
+}
+
+input.submitButton {
+    border-radius: 8px;
+    width: 98%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 160px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #7366ff
+}
+input.submitButton:active {
+    background-color:#6355f6;
+}
+
+.fio{
+    display: flex;
+    max-width: 100%;
+}
+.fio input {
+    width: 33%;
+}
+
+
+.input30 {
+    display:flex;
+    max-width: 100%;
+}
+.input30 input{
+    width: 25%;
+}
+
+
+
+.sex {
+    margin: auto;
+    height: 45px;
+    width: 25%;
+    border: 1px solid #6355f6;
+    border-radius:5px;
+    padding: ;
+}
+.form-check.form-check-inline.radio.radio-primary {
+    
+}
