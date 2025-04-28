@@ -1,8 +1,10 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Providers } from '@/components/providers'
-import { Header } from '@/components/Header'
+import { HeaderNew } from '@/components/HeaderNew'
 import { Footer } from '@/components/Footer'
+import { ContactForm } from '@/components/ContactForm'
+import { Toaster } from 'sonner'
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
@@ -23,11 +25,13 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Providers>
-          <Header />
+          <HeaderNew />
           <main className="min-h-screen pt-32">
             {children}
           </main>
           <Footer />
+          <ContactForm />
+          <Toaster richColors position="top-right" />
         </Providers>
       </body>
     </html>
